@@ -467,7 +467,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "robotoslab", serif;
+  font-family: arial, serif;
 }
 h1 {
   font-size: 25px;
@@ -680,7 +680,7 @@ body.layout-boxed-lg #page {
   background: url('../image/default/box-heading-bg.png') no-repeat left center;
   border-bottom: 2px solid #e7e7e7;
   padding: 8px 30px;
-  font-family: "robotoslab", serif;
+  font-family: serif;
   font-size: 20px;
   text-transform: uppercase;
   position: relative;
@@ -696,9 +696,6 @@ body.layout-boxed-lg #page {
 }
 .box .box-heading span {
   color: #3B3B3B;
-}
-.box .box-heading span span {
-  color: #7db641;
 }
 .sidebar .box .box-heading {
   background: #b39770;
@@ -1039,7 +1036,6 @@ body.layout-boxed-lg #page {
   background: url('../image/arrow-down.png') 100% 50% no-repeat;
   padding-right: 15px;
   font-size: 13px;
-  text-transform: uppercase;
 }
 #header #cart .heading h4 {
   margin: 0;
@@ -1470,12 +1466,6 @@ ul.box-filter span {
   display: block;
   padding-bottom: 5px;
   margin-bottom: 8px;
-}
-#colorbox *:before,
-#colorbox *:after {
-  -moz-box-sizing: inherit;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
 }
 .zoomContainer .zoomLens {
   border-color: #999999 !important;
@@ -2525,7 +2515,6 @@ ul.box-filter span {
 }
 .box-services {
   font-size: 15px;
-  text-transform: uppercase;
 }
 .box-services .iconbox {
   -webkit-border-radius: 20px;
@@ -2558,10 +2547,10 @@ ul.box-filter span {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   content: "";
-  height: 100%;
+  height: 110%;
   pointer-events: none;
   position: absolute;
-  width: 100%;
+  width: 110%;
   z-index: -1;
   opacity: 1;
   filter: alpha(opacity=100);

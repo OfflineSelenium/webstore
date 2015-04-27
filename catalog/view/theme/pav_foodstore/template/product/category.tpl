@@ -8,7 +8,7 @@
 		'cateogry_display_mode' 			 => 'grid',
 		'category_pzoom'				     => 1,
 	); 
-	$categoryConfig  = array_merge($categoryConfig, $themeConfig );
+	$categoryConfig  = array_merge($categoryConfig);
 	$DISPLAY_MODE 	 = $categoryConfig['cateogry_display_mode'];
 	$MAX_ITEM_ROW 	 = $themeConfig['listing_products_columns']?$themeConfig['listing_products_columns']:3; 
 	$MAX_ITEM_ROW_SMALL = $categoryConfig['listing_products_columns_small'] ;

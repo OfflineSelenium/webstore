@@ -180,7 +180,7 @@
 				<?php } else { ?>
 					<?php echo $powered; ?>. 
 				<?php } ?>
-				Design By <a href="http://www.pavothemes.com" title="pavothemes - opencart themes clubs">PavoThemes</a>
+				Design By <a>Thinh Nguyen</a>
 			</div>
 			<?php if( isset($themeConfig['widget_paypal_data'][$LANGUAGE_ID]) ) {?>
 				<div class="paypal pull-right">

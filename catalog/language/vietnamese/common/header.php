@@ -21,4 +21,7 @@ $_['text_checkout'] = 'Thanh toán';
 $_['text_language'] = 'Ngôn ngữ';
 $_['text_currency'] = 'Tiền tệ';
 $_['text_all']           = 'Xem tất cả';
+$_['text_about_us']      = 'Giới Thiệu';
+$_['text_product']      = 'Sản Phẩm';
+$_['text_contact']      = 'Liên Hệ';
 ?>

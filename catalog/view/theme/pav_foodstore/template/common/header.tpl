@@ -135,24 +135,24 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <section id="header">
 		<section id="topbar">
 			<div class="container"><div class="row">
-				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 top-menu">
 					<ul class="links pull-left hidden-sm hidden-xs">
 						<!-- <li><a class="first" href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li> -->
 						<li><a class="wishlist" href="<?php echo $wishlist; ?>" id="wishlist-total"><span class="icon-heart"></span><?php echo $text_wishlist; ?></a></li>
-						<li><a class="account" href="<?php echo $account; ?>"><span class="icon-user"></span><?php echo $text_account; ?></a></li>
+						<!--<li><a class="account" href="<?php echo $account; ?>"><span class="icon-user"></span><?php echo $text_account; ?></a></li>-->
 						<li><a class="shoppingcart" href="<?php echo $shopping_cart; ?>"><span class="icon-shopping-cart"></span><?php echo $text_shopping_cart; ?></a></li>
 						<li><a class="last checkout" href="<?php echo $checkout; ?>"><span class="icon-file"></span><?php echo $text_checkout; ?></a></li> 
 						
 					</ul>
-					<div class="welcome pull-left">
+					<!--<div class="welcome pull-left">
 						<?php if (!$logged) { ?>
 						<?php echo $text_welcome; ?>
 						<?php } else { ?>
 						<?php echo $text_logged; ?>
 						<?php } ?> 
-					</div>
+					</div>-->
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 						<div class="currency pull-right">
 							<?php echo $currency; ?>
 						</div> 
@@ -160,7 +160,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 							<?php echo $language; ?>
 						</div>
 
-				</div>
+				</div>-->
 			</div></div>
 		</section>
 		<section id="header-main">
@@ -170,16 +170,27 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 					  <?php if ($logo) { ?>
 					  <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 					  <?php } ?>
-					
 					</div>
-
 					<div class="header-right col-lg-8 col-md-8 col-sm-12 header-hidden inner">
+						<div class="box-services" style="width:38%;">
+							<span class="btn-info iconbox pull-left"><i class="icon-truck">&nbsp;</i></span>
+							<div class="media-body">
+								<h4>GIAO HÀNG MIỄN PHÍ</h4>
+								<small>Hóa đơn trên 500k</small>
+							</div>
+						</div>
+						<div class="box-services" style="width:32%;">
+							<span class="iconbox pull-left"><i class="icon-phone">&nbsp;</i></span>
+							<div class="media-body">
+								<h4>HOTLINE</h4>
+								<small>0934.100286</small>
+							</div>
+						</div>
 						<?php
 							$LANGUAGE_ID = $this->config->get( 'config_language_id' );  
 					 		if( isset($themeConfig['widget_delivery_data'][$LANGUAGE_ID]) ) { ?>
 							<?php echo html_entity_decode( $themeConfig['widget_delivery_data'][$LANGUAGE_ID], ENT_QUOTES, 'UTF-8' ); ?>
 					 	<?php } ?>
- 
 						<?php echo $cart; ?>
 					</div>
 					<div class="header-right visible-xs inner"> 
@@ -222,7 +233,10 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 						  <div class="collapse navbar-collapse navbar-ex1-collapse">
 									  <ul class="nav navbar-nav">
 								  	<li><a href="<?php echo $home; ?>" title="<?php echo $this->language->get('text_home');?>"><?php echo $this->language->get('text_home');?></a></li>
-									<?php foreach ($categories as $category) { ?>
+									<li><a href="<?php echo $home; ?>" title="<?php echo $this->language->get('text_about_us');?>"><?php echo $this->language->get('text_about_us');?></a></li>
+									<li><a href="<?php echo $home; ?>" title="<?php echo $this->language->get('text_product');?>"><?php echo $this->language->get('text_product');?></a></li>
+									<li><a href="<?php echo $home; ?>" title="<?php echo $this->language->get('text_contact');?>"><?php echo $this->language->get('text_contact');?></a></li>
+									<!--<?php foreach ($categories as $category) { ?>
 									
 									<?php if ($category['children']) { ?>			
 									<li class="parent dropdown deeper "><a href="<?php echo $category['href'];?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?>
@@ -246,7 +260,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 									</ul>
 									  <?php } ?>
 									</li>
-									<?php } ?>
+									<?php } ?>-->
 								  </ul>
 							</div>	   
 						<?php } ?>

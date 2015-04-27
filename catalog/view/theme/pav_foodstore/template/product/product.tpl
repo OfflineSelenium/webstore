@@ -14,7 +14,7 @@
       'product_related_column'     => 0,
   );
   $languageID = $this->config->get('config_language_id');
-  $productConfig = array_merge( $productConfig, $themeConfig ); 
+  $productConfig = array_merge( $productConfig); 
 ?>
 <?php echo $header; ?>
 <?php require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/breadcrumb.tpl" );  ?>  
