@@ -231,11 +231,11 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 							</div>
 
 						  <div class="collapse navbar-collapse navbar-ex1-collapse">
-									  <ul class="nav navbar-nav">
-								  	<li><a href="<?php echo $home; ?>" title="<?php echo $this->language->get('text_home');?>"><?php echo $this->language->get('text_home');?></a></li>
-									<li><a href="<?php echo $home; ?>" title="<?php echo $this->language->get('text_about_us');?>"><?php echo $this->language->get('text_about_us');?></a></li>
-									<li><a href="<?php echo $home; ?>" title="<?php echo $this->language->get('text_product');?>"><?php echo $this->language->get('text_product');?></a></li>
-									<li><a href="<?php echo $home; ?>" title="<?php echo $this->language->get('text_contact');?>"><?php echo $this->language->get('text_contact');?></a></li>
+								<ul class="nav navbar-nav">
+								  	<li><a href="<?php echo $home; ?>"><?php echo $this->language->get('text_home');?></a></li>
+									<li><a href=""><?php echo $this->language->get('text_product');?></a></li>
+									<li><a href="index.php?route=information/information&information_id=4"><?php echo $this->language->get('text_about_us');?></a></li>
+									<li><a href="index.php?route=information/contact"><?php echo $this->language->get('text_contact');?></a></li>
 									<!--<?php foreach ($categories as $category) { ?>
 									
 									<?php if ($category['children']) { ?>			
@@ -261,7 +261,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 									  <?php } ?>
 									</li>
 									<?php } ?>-->
-								  </ul>
+								</ul>
 							</div>	   
 						<?php } ?>
 						</nav>
