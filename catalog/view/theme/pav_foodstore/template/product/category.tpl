@@ -27,48 +27,8 @@
 <div id="content"><?php echo $content_top; ?>
  
   <h1 class="heading_title"><span><?php echo $heading_title; ?></span></h1>
-  <?php if ($thumb || $description) { ?>
-  <div class="category-info clearfix">
-    <?php if ($thumb) { ?>
-    <div class="image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div>
-    <?php } ?>
-    <?php if ($description) { ?>
-    <div class="description"><?php echo $description; ?></div>
-    <?php } ?>
-  </div>
-  <?php } ?> 
-  <?php if ($categories) { ?>
-  <div class="category-list clearfix">
-  <h2 class="heading_title"><span><?php echo $text_refine; ?></span></h2>
-    <?php if (count($categories) <= 5) { ?>
-    <ul>
-      <?php foreach ($categories as $category) { ?>
-      <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-      <?php } ?>
-    </ul>
-    <?php } else { ?>
-    <?php for ($i = 0; $i < count($categories);) { ?>
-    <ul>
-      <?php $j = $i + ceil(count($categories) / 4); ?>
-      <?php for (; $i < $j; $i++) { ?>
-      <?php if (isset($categories[$i])) { ?>
-      <li><a href="<?php echo $categories[$i]['href']; ?>"><?php echo $categories[$i]['name']; ?></a></li>
-      <?php } ?>
-      <?php } ?>
-    </ul>
-    <?php } ?>
-    <?php } ?>
-  </div>
-  <?php } ?>
   <?php if ($products) { ?>
   <div class="product-filter clearfix">
-    <div class="display">
-		<span><?php echo $text_display; ?></span>
-		<span><?php echo $text_list; ?></span>
-		<a onclick="display('grid');"><?php echo $text_grid; ?></a>
-	</div>
-    
-    <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total" class="btn btn-theme-primary"><?php echo $text_compare; ?></a></div>
 	<div class="limit"><span><?php echo $text_limit; ?></span>
       <select class="form-control" onchange="location = this.value;">
         <?php foreach ($limits as $limits) { ?>
